@@ -15,11 +15,17 @@ object ExampleGenerator extends App {
   val image2 = Image.fromStream(getClass.getResourceAsStream("/companion-cube.jpg"))
 
   val filters: List[(String, Filter)] = List(
-    ("atkinson", AtkinsonFilter()),
-    ("burkes", BurkesFilter()),
     ("floyd-steinberg", FloydSteinbergFilter()),
     ("jarvis-judice-ninke", JJNFilter()),
-    ("stucki", StuckiFilter())
+    ("stucki", StuckiFilter()),
+    ("atkinson", AtkinsonFilter()),
+    ("burkes", BurkesFilter()),
+    ("sierra-3", SierraFilter()),
+    ("sierra-2", TwoRowSierraFilter()),
+    ("sierra-1", SierraLiteFilter()),
+    ("ordered4x4", Ordered4x4BayerFilter()),
+    ("ordered8x8", Ordered8x8BayerFilter()),
+    ("random", RandomDitherFilter(100))
   )
 
   val sb = new StringBuffer()
