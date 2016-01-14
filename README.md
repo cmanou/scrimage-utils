@@ -6,6 +6,8 @@ error diffusion values and matrix dithering values.
 
 Latest Release: 1.1
 
+[![](https://jitpack.io/v/cmanou/scrimage-utils.svg)](https://jitpack.io/#cmanou/scrimage-utils)
+
 ### Filters
 
 ### Error Diffusion Dithering
